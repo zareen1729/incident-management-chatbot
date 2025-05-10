@@ -1,0 +1,21 @@
+{
+  "name": "IncidentManagerBot",
+  "locale": "en-US",
+  "intents": [
+    {
+      "name": "ReportIncident",
+      "sampleUtterances": ["Report an incident", "Something is wrong"],
+      "lambda": "arn:aws:lambda:us-west-1:123456789012:function:IncidentHandler"
+    },
+    {
+      "name": "CheckIncidentStatus",
+      "sampleUtterances": ["What's the status?", "Is the issue resolved?"],
+      "lambda": "arn:aws:lambda:us-west-1:123456789012:function:IncidentHandler"
+    },
+    {
+      "name": "ResolveIncident",
+      "sampleUtterances": ["Mark it resolved", "Problem solved"],
+      "lambda": "arn:aws:lambda:us-west-1:123456789012:function:IncidentHandler"
+    }
+  ]
+}
