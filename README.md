@@ -9,6 +9,20 @@ This project implements a serverless chatbot for incident management using AWS s
 - Monitor system metrics with CloudWatch
 - Integrate alerts into Slack or Microsoft Teams
 
+## Architecture Diagram
+
+[User]
+   |
+   v
+[Amazon Lex Bot]
+   |
+   v
+[AWS Lambda Function]
+   |
+   v
+[Amazon SNS] <--> [Amazon CloudWatch Alarms]
+
+
 ## Setup Instructions
 
 1. Deploy the Lambda function using AWS Console or AWS CLI.
